@@ -28,9 +28,9 @@ It is designed to handle high-throughput concurrent API calls and ensures perfec
 Rename `.env.example` to `.env` (or create one) and configure your Kafka and OpenWeather parameters:
 
 ```env
-KAFKA_BOOTSTRAP_SERVERS=pkc-xyz.us-central1.gcp.confluent.cloud:9092
-SASL_USERNAME=your_kafka_api_key
-SASL_PASSWORD=your_kafka_api_secret
+# Optional: Defaults to localhost:9092
+KAFKA_BOOTSTRAP_SERVERS=localhost:9092
+
 OPENWEATHER_API_KEY=your_openweather_key
 TOPIC=weather-stream
 CASSANDRA_HOST=localhost
