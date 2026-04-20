@@ -1,0 +1,12 @@
+venv/
+.env
+data/
+__pycache__/
+*.pyc
+*.log
+producer.log
+consumer.log
+verify_parity.py
+verify_parity_results.txt
+check_timestamps.py
+check_data.py

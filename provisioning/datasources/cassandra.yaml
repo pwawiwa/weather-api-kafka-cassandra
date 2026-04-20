@@ -1,0 +1,12 @@
+apiVersion: 1
+
+datasources:
+  - name: Cassandra
+    uid: cassandra-ds
+    type: hadesarchitect-cassandra-datasource
+    access: proxy
+    url: "cassandra:9042"
+    jsonData:
+      keyspace: weather
+      consistency: ONE
+    editable: true
